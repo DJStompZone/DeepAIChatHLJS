@@ -2531,49 +2531,42 @@
 
     <h3>AI Chat is an AI chatbot that writes text. You can use it to write stories, messages, or programming code. You
         can use the AI chatbot as a virtual tutor in almost any subject.</h3>
-    <div class="chatbox-wrapper" id="chatboxWrapperId_0">
-        <textarea class="chatbox" rows="10" cols="50"
-            contenteditable="false">Please write a "fizzbuzz" program in C</textarea>
+        <div class="chatbox-wrapper" id="chatboxWrapperId_0">
+            <textarea class="chatbox" rows="10" cols="50" contenteditable="false">Please write a "fizzbuzz" program in C</textarea>
+          </div>
+        <div class="chatoptionsBox" contenteditable="false"></div>
     </div>
-    <div class="chatoptionsBox" contenteditable="false"></div>
-    </div>
-    <div class="outputBox">Certainly! Below is an example of a simple FizzBuzz program written in C. FizzBuzz is a
-        common programming task often used in job interviews. The task is to print the numbers from 1 to 100, but for
-        multiples of 3 print "Fizz" instead of the number, for multiples of 5 print "Buzz", and for multiples of both 3
-        and 5 print "FizzBuzz".
+    <div class="outputBox">Certainly! Below is an example of a simple FizzBuzz program written in C. FizzBuzz is a common programming task often used in job interviews. The task is to print the numbers from 1 to 100, but for multiples of 3 print "Fizz" instead of the number, for multiples of 5 print "Buzz", and for multiples of both 3 and 5 print "FizzBuzz".
 
-        ```c
-        #include &lt;stdio.h&gt;
+```c
+#include &lt;stdio.h&gt;
 
-        int main() {
-        for (int i = 1; i &lt;= 100; ++i) {
+int main() {
+    for (int i = 1; i &lt;= 100; ++i) {
         if (i % 3 == 0 &amp;&amp; i % 5 == 0) {
-        printf("FizzBuzz\n");
+            printf("FizzBuzz\n");
         } else if (i % 3 == 0) {
-        printf("Fizz\n");
+            printf("Fizz\n");
         } else if (i % 5 == 0) {
-        printf("Buzz\n");
+            printf("Buzz\n");
         } else {
-        printf("%d\n", i);
+            printf("%d\n", i);
         }
-        }
-        return 0;
-        }
-        ```
+    }
+    return 0;
+}
+```
 
-        To compile and execute this program, save it to a file with a `.c` extension (for example, `fizzbuzz.c`), then
-        run the following commands in your terminal:
+To compile and execute this program, save it to a file with a `.c` extension (for example, `fizzbuzz.c`), then run the following commands in your terminal:
 
-        ```sh
-        gcc -o fizzbuzz fizzbuzz.c
-        ./fizzbuzz
-        ```
+```sh
+gcc -o fizzbuzz fizzbuzz.c
+./fizzbuzz
+```
 
-        This will compile the program using GCC (GNU Compiler Collection) and create an executable named `fizzbuzz`,
-        which you can then run to see the FizzBuzz output.
+This will compile the program using GCC (GNU Compiler Collection) and create an executable named `fizzbuzz`, which you can then run to see the FizzBuzz output.
 
-        Make sure you have a C compiler installed (like GCC or Clang) on your system to compile and run C programs.
-    </div>
+Make sure you have a C compiler installed (like GCC or Clang) on your system to compile and run C programs.</div>
     <script>
         function parseMessage() {
             let text_input = document.querySelector(".outputBox").innerText;
